@@ -1,0 +1,6 @@
+key,name,n,correct,accuracy,normal,inner_race,outer_race,ball,unparsed,conf_right,conf_wrong,prompt_tokens,cost_usd,models,note
+ml_leaky,"Classic ML, random split",119,119,1.0,,,,,,,,,,,1-s pieces of the same recording in train and test (leaky)
+ml_by_load,"Classic ML, unseen motor load",40,40,1.0,4/4,12/12,12/12,12/12,,,,,,,same damaged bearing seen in training at other loads
+ml_by_bearing,"Classic ML, unseen bearing",40,32,0.8,4/4,9/12,8/12,11/12,,,,,,,test bearing never seen in training
+claude_raw,"Claude, raw numbers",40,33,0.825,4/4,10/12,7/12,12/12,0,0.6736363636363637,0.5142857142857143,66901.275,22.300488,claude-opus-5-5,"12,000 samples pasted in the prompt, no tools, no training"
+claude_tool,Claude + vibtool report,40,33,0.825,4/4,12/12,8/12,9/12,0,0.7396969696969697,0.5357142857142857,2392.0,1.09666,claude-opus-5-5,"one-page envelope analysis report, no tools, no training"

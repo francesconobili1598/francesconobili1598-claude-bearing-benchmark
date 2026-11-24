@@ -1,0 +1,4 @@
+# CWRU files are fetched from the source by download_data.py, never redistributed
+data/
+__pycache__/
+*.pyc
